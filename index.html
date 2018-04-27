@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Syntax Board</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="scripts/tsboard.js"></script>
+        <style>
+        h1 { font-size: 25px; margin-top: 1em; font-weight: bold; color: DodgerBlue;}
+        h2 { font-size: 20px; margin-top: 1em; font-weight: bold; color: Tomato;}
+        h3 { font-size: 15px; margin-top: 1em; font-weight: bold; color: orange;}
+        pre { padding-top: 5px; padding-right: 10px; padding-bottom: 5px;
+              padding-left: 10px; border:1px dotted blue }
+        </style>
+    </head>
+    <body>
+        <div class="jumbotron">
+        <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+              <h4>Oracle Syntax Board</h4>
+              <small class="text-muted">(c) tinitiate.com / venkata bhattaram </small>
+          </div>
+          <div class="col-lg-6">
+          <ul>
+            <li>Quick reference for common syntax.</li>
+            <li>Syntax Cards in tabs by context.</li>
+          </ul>
+          </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-12">
+            <ul id="NavPills" class="nav nav-tabs bg-warning "></ul>
+            <div id="TabContent" class="tab-content"></div>
+        </div>
+        </div>
+        </div>
+
+        <div class="jumbotron">
+        <div class="col-lg-12">
+            <small class="text-muted">(c) tinitiate.com / venkata bhattaram </small>
+        </div>
+        </div>
+    </body>
+</html>
